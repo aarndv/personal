@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      13a and 13b Nested Flexbox practice
+    </title>
+    <style>
+      .container-1 {
+        display: flex;
+        height: 60px;
+        flex-direction: row;
+        margin-top: 10px;
+      }
+    
+      .left-section1 {
+        background-color: palevioletred;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .item1 {
+        background-color: wheat;
+      }
+
+      .right-section1 {
+        background-color: lightskyblue;
+        width: 200px;
+      }
+
+      .right-section2 {
+        width: 200px;
+        background-color: lightblue;
+      }
+
+      .row1 {
+        height: 20px;
+        display: flex;
+      }
+
+      .row2 {
+        display: flex;
+        justify-content: space-between
+      }
+
+      .text {
+        background-color: black;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container-1">
+      <div class="left-section1">
+        <div class="item1">item1</div>
+      </div>
+      <div class="right-section1">
+      </div> 
+    </div>
+    <div class="container-1">
+      <div class="left-section1">
+      </div>
+      <div class="right-section2">
+        <div class="row1">
+          row1 
+        </div>
+        <div class="row2">
+          <div class="text">row2</div>
+          <div class="text">row2</div>
+        </div>
+        <div class="row3"></div>
+      </div>
+    </div>
+  </body>
+</html>

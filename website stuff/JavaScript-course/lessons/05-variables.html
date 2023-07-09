@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>variables</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <script> 
+      let variable1 = 3;  
+      console.log(variable1);
+
+      let calculation = 2 + 2; 
+      console.log(calculation);
+
+      console.log(calculation + 2);
+      console.log(calculation + variable1);
+
+      let result = calculation + 2;
+      let v = result + calculation;
+      console.log(v);
+      console.log(result);
+
+      let message = 'hello';
+      console.log(message);
+
+      let s = ' '
+      let message1 = 'hello';
+      let message2 = 'world';
+      let message3 = '!';
+      console.log(message1 + s + message2 + message3);
+
+      variable1 = 5;
+
+      variable1 += 1;
+      console.log(variable1);
+
+      const variable2 = 3;
+      // const cannot be changed, unlike let
+      variable2 = 5; 
+      // since const defined it, therefore, it can't be changed
+
+      var variable3 = 3; 
+      // can be change later
+
+      console.log(typeof variable2);
+      console.log(typeof message);
+    </script>
+  </body>
+</html>

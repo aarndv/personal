@@ -1,0 +1,82 @@
+body {
+  height: 7rem;
+  padding-top: 6.25rem;
+  margin: 0;
+  background-color: rgba(202,134,151, 0.15);
+}
+
+.overall {
+  display: flex;
+  flex-direction: row;
+  margin-top: -1.25rem;
+}
+
+.home-button {
+  background-color: white; 
+}
+
+.contents {
+  margin-top: 3.125rem;
+}
+
+.brief-introduction-container, .mission-and-vision-container {
+  margin: 1.25rem;
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 1.875rem;
+}
+
+.brief-introduction-container {
+  font-family: Montserrat;
+  font-size: 1.5625rem;
+  text-align: center;
+}
+
+.brief-introduction-row {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+.mission-and-vision-container {
+  font-family: Montserrat;
+  margin-top: 12.5rem;
+  display: grid;
+  grid-template-columns: 1fr 10fr 10fr 1fr;
+  vertical-align: top;
+  column-gap: 3.125rem;
+}
+
+.mv-text1, .mv-text2 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  height: 27.5rem;
+}
+
+.mv-title1, .mv-title2 {
+  color: white;
+  font-size: 2.8125rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3.125rem;
+  border-radius: 2.5rem;
+}
+
+.mv-title1 {
+  background-color: rgb(170,20,52);
+}
+
+.mv-title2 {
+  background-color: rgb(170,20,52)
+}
+
+
+
+
+

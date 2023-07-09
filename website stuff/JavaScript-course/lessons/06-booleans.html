@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans</title>
+    <style>
+
+    </style>
+    <script> 
+      true
+      false
+
+      console.log(typeof true);
+      console.log(typeof (3 > 5));
+
+      let varTest = 3 > 5;
+      console.log(varTest);
+
+      console.log(3 > 5); 
+
+      /*
+      Comparison Operators:
+      > greater than
+      < less than
+      >= greater than or equal to
+      <= less than or equal to
+      (=== equal to) or (==)
+      !== not equal to
+      */
+
+      console.log(5 == '5.00');
+      // == converts value into the same type 
+      // so it is advised to use ===
+      // also !=
+
+      if (true) {
+        console.log('hello');
+      } 
+  
+      if (3>5) {
+        console.log('hello');
+      } else {
+        console.log('else');
+      }
+
+      if (15 >= 16) {
+        console.log('You can drive');
+        console.log('Congrats!');
+      } else {
+        console.log("You can't drive");  
+      }
+
+      if (15 >= 16) {
+        console.log('You can drive');
+        console.log('Congrats!');
+      } else if (15 >= 14) {
+        console.log('Almost there!'); 
+      } else {
+        console.log("You can't drive");
+      }
+
+      const age = 15;
+
+      if (age >= 16) {
+        console.log('You can drive');
+        console.log('Congrats');
+      } else if (age >= 14) {
+        console.log('Almost there!');
+      } else {
+        console.log('You can not drive');
+      }
+
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

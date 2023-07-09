@@ -1,0 +1,151 @@
+.header {
+  display: flex;
+  height: 11.25rem;
+  background-color:rgb(231,193,110);
+
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  z-index: 100;
+}
+
+.top-row {
+  flex: 1;
+  display: flex;
+  height: 6.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side {
+  width: 6.25rem;
+  height: 8.125rem;
+  background-color: rgb(107,7,32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  border-radius: 2.8125rem;
+  width: 5.625rem;
+  height: 5.625rem;
+  box-shadow: 0.25rem 0.25rem 0.3125rem rgba(0, 0, 0, 0.4);
+}
+
+.middle-side {
+  flex: 1;
+  height: 8.125rem;
+  background-color: rgb(107,7,32);
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+
+.header-title {
+  font-size: 2.1875rem;
+  font-family: Montserrat;
+  font-weight: bold;
+  color: rgb(231,193,110);
+  margin-right: 0.625rem;
+}
+
+.anchor-containerm {
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 0.5rem 1rem 0.5rem;
+  border-radius: 0.625rem;
+  box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.3);
+  margin-left: 0.75rem;
+  transition: all 0.15s;
+}
+
+.anchor-containerm:hover {
+  background-color: rgb(202,134,151);
+  color: white;
+}
+
+.right-side {
+  height: 6.25rem;
+  width: 9.375rem;
+  background-color: rgb(231,193,110);
+  display: none;
+}
+
+.anchor-containerm a{
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.bottom-side {
+  height: 3.125rem;
+  display: flex;
+  justify-content: left;
+  align-items: center; 
+}
+
+@media only screen and (min-width: 48rem) {
+  .right-side {
+    height: 6.25rem;
+    flex: 1;
+    background-color: rgb(173,124,58);
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 0.625rem;
+  }
+
+  .anchor-containerm {
+    display: none;
+  }
+
+  .anchor-container {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 0.625rem;
+    box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.3);
+    margin-left: 0.75rem;
+    transition: all 0.15s;
+    flex-direction: row;
+    cursor: pointer;
+  }
+
+  .anchor-container a{
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 1.1875rem;
+    font-weight: bold;
+  }
+
+  .anchor-container:hover {
+    background-color: rgb(202,134,151);
+    color: white;
+  }
+
+  .header {
+    height: 6.25rem;
+    flex-direction: row;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+  }
+
+  .middle-side {
+    height: 6.25rem;
+  }
+
+  .left-side {
+    height: 6.25rem;
+  }
+
+  
+}

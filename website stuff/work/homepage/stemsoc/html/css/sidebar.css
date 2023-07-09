@@ -1,0 +1,81 @@
+.sidebar {
+  padding-top: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  background-color: rgb(107,7,32);
+}
+
+.home-container {
+  margin-bottom: 1rem;
+  min-height: 14.375rem;
+  position: relative;
+}
+
+.home-container .home-pop-up1 {
+  position: absolute;
+  width: 75rem;
+  left: 6.25rem;
+  margin-left: 31.25rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.15s;
+  border-radius: 3.125rem;
+  border-width: 0.625rem;
+  border-color: rgb(107,7,32);
+  border-style: solid;
+}
+
+.home-container:hover .home-pop-up1 {
+  opacity: 1;
+}
+
+.home-container .home-pop-up1 {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 50;
+}
+
+.home-container .home-pop-up2 {
+  position: absolute;
+  width: 75rem;
+  left: 6.25rem;
+  margin-left: 31.25rem;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.15s;
+  border-radius: 3.125rem;
+  border-width: 0.625rem;
+  border-color: rgb(107,7,32);
+  border-style: solid;
+}
+
+.home-container:hover .home-pop-up2 {
+  opacity: 1;
+}
+
+.home-container .home-pop-up2 {
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 50;
+}
+
+.home-picture1, .home-picture2, .home-picture3, .home-picture4 {
+  margin-left: 1.875rem;
+  width: 25rem;
+  height: 15.75rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+

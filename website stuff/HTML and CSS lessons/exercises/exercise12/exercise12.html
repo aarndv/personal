@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      flexbox practice
+    </title>
+    <style>
+      div {
+        font-family: arial;
+      }
+
+      .contents {
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: inline-block;
+        border-radius: 5px;
+      }
+
+      .top-row, .center-row, .bottom-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 200px;
+        margin-bottom: 6px;
+      }
+
+      .amount {
+        background-color: rgb(69, 156, 127);
+        color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="contents">
+      <div class="top-row">
+        <div>Home</div>
+        <div class="amount">14</div>
+      </div>
+      <div class="center-row">
+        <div>Notifications</div>
+        <div class="amount">3</div>
+      </div>
+      <div class="bottom-row">
+        <div>Messages</div>
+        <div class="amount">5</div>
+      </div>
+    </div>
+  </body>
+</html>

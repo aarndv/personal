@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+}
+
+.left {
+  background-color: rgb(126,8,34);
+  width: 550px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+}
+
+.left-right, .left-left {
+  background-color: rgb(126,8,34);
+  display: inline-block;
+}
+
+.left-right {
+  min-width: 220px;
+}
+
+.center {
+  background-color:  rgb(126,8,34);
+  flex: 1;
+  min-width: 10px;
+}
+
+
+.stemsoc-logo {
+  display: inline-block;
+  width: 70px;
+  padding-top: 25px;
+  margin-left: 10px;
+}
+
+.org-name {
+  display: inline-block;
+  margin-top: 41.5px;
+  margin-left: 10px;
+  font-size: 30px;
+  color: rgba(251,213,130,255);
+
+}

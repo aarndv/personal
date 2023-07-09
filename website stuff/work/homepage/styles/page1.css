@@ -1,0 +1,49 @@
+.home-button {
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: beige;
+  width: 700px;
+}
+
+.home-button, .ato-button, .achievements-button, .members-button {
+  display: inline-block;
+  width: 100px;
+  padding: 0px;
+  vertical-align: middle;
+  color: rgba(180,136,31,255);
+  font-family: Montserrat;
+  padding: 5px;
+  font-size: 12px;
+  background-color: rgba(88,7,26,255);
+  border: solid;
+  border-radius: 10px;
+  border-color: rgba
+  (180,136,31,255);
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.05s;
+}
+
+.home-button, .ato-button:hover, .achievements-button:hover, .members-button:hover {
+  border-color: rgba(88,7,26,255);
+  color: rgba(88,7,26,255);
+  background-color: rgba(180,136,31);
+}
+
+.home-button:active, .ato-button:active, .achievements-button:active, .members-button:active {
+  opacity: 0.5;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: -5px;
+  margin-bottom: -5px;
+  box-shadow: none;
+}

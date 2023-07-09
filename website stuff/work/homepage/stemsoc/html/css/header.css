@@ -1,0 +1,75 @@
+.header {
+  height: 5rem;
+  background-color: rgb(107,7,32);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0rem;
+  right: 0rem;
+  left: 0rem;
+  z-index: 100;
+}
+
+.left-side {
+  flex: 1;
+  min-width:31.25rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 1.25rem;
+}
+
+.logo {
+  width: 4.0625rem;
+  margin-right: 0.9375rem;
+}
+
+.right-side {
+  background-color: rgb(173,124,58);
+  width: 50rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.org-name {
+  font-family: Montserrat;
+  color: rgb(231,193,110); 
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.home-button, .ato-button, .achievements-button, .committees-button {
+  font-family: Roboto, Montserrat;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgb(148,148,148);
+  color: rgb(0, 0, 0);
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  border-width: 0.0625rem;
+  border-radius: 0.625rem;
+  border-style: solid;
+  border-color: rgb(235,232,229);
+  box-shadow: inset 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.5);
+  transition: all 0.15s;
+}
+
+.home-button {
+  background-color: white;
+}
+
+.ato-button:hover {
+  background-color: white;
+}
+
+
+.achievements-button:hover {
+  background-color: white;
+}
+
+.committees-button:hover {
+  background-color: white;
+}

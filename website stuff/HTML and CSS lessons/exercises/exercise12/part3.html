@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      part 3 flexbox
+    </title>
+    <style>
+      body {
+        margin: 0;
+        font-family: arial;
+      }
+
+      .header{
+        display: flex;
+        height: 40px;
+      }
+
+      .left-column {
+        background-color: plum;
+        width: 100px;
+        display: grid;
+        align-items: center;
+
+      }
+
+      .center-column {
+        background-color: plum;
+        flex: 1;
+        display: grid;
+        align-items: center;
+      }
+
+      .right-column {
+        background-color: plum;
+        width: 100px;
+      }
+      
+      .home {
+        padding-left: 10px;
+        font-weight: bold;
+        color: white;
+        font-size: 12px;
+        cursor: default;
+      }
+
+      .search-bar-container {
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 10px 1fr 10px;
+      }
+
+      .search-bar {
+        color: gray;
+        font-size: 8px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        border-radius: 10px;
+        border: solid;
+        border-width: 1px;
+      }
+
+      .right-column {
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .button {
+        color: white;
+        background-color: inherit;
+        border-color: white;
+        border: solid;
+        border-width: 1px;
+        border-radius: 3px;
+        font-size: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;       
+        transition: all 0.2s; 
+      }
+
+      .button:hover {
+        background-color: white;
+        color: plum;
+        border-color: plum;
+      }
+      
+      .button:active {
+        opacity: 0.6;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-column">
+        <div class="home">Home</div>
+      </div>
+      <div class="center-column">
+        <div class="search-bar-container">
+          <div></div>
+          <input class="search-bar" placeholder="Search">
+          <div></div>
+        </div>
+      </div>
+      <div class="right-column">
+        <button class="button">Download</button>
+      </div>
+    </div>
+  </body>
+</html>

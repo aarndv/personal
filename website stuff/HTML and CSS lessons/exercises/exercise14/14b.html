@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>14b+</title>
+  </head>
+  <style>
+    body {
+      height: 3000px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .right-sidebar {
+      position: fixed;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      width: 100px;
+      background-color: green;
+      color: wheat;
+    }
+
+    .overlay {
+      position: fixed;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      top: 0px;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: white;
+      width: 300px;
+      padding-left: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-radius: 1em;
+    }
+
+    .top-row {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .middle-row {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+  </style>
+  <body>
+
+    <div class="right-sidebar">
+      right sidebar
+    </div>
+
+    <div class="overlay">
+    
+      <div class="container">
+        <div class="top-row">
+          Modal Title
+        </div>
+        <div class="middle-row">
+          This is a modal
+        </div>
+        <button>
+          Close
+        </button>
+
+      </div>
+
+      
+    </div>
+
+  </body>
+</html>

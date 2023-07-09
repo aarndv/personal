@@ -1,0 +1,102 @@
+.red-box {
+  background-color: red;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.green-circle {
+  background-color: green;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.choices {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.container {
+  display: block;
+  border: solid;
+  border-width: 1px;
+  border-color: black;
+  width: 200px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.advertisement {
+  margin-bottom: 20px;
+  background-color: rgb(42, 42, 42);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  font-family: Arial;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.ad {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.info {
+  color: grey;
+  width: 370px;
+}
+
+.posting {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  width: 700px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.search-bar {
+  border: none;
+  font-size: 30px;
+  margin-bottom: 90px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.tweet-button {
+  background-color: rgb(2, 158, 255);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.15s;
+  margin-bottom: 85px;
+  margin-left: 90px;
+  vertical-align: middle;
+}
+
+.tweet-button:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tweet-button:active {
+  opacity: 0.6;
+}

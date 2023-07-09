@@ -1,0 +1,63 @@
+body {
+  font-family: Roboto;
+}
+
+p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.price {
+  font-size: 25px;
+  margin-right: 12px;
+}
+
+.dollar {
+  font-size: 15px;
+  color: rgb(95, 95, 95);
+}
+
+.changes {
+  margin-top: 5px;
+  color: green;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.gray {
+  color: gray;
+}
+
+.red {
+  color: red;
+  margin-left: 8px;
+}
+
+.display-name {
+  font-weight: bold;
+}
+
+.username {
+  margin-left: 6px;
+  color: gray;
+  cursor: pointer;
+}
+
+.word {
+  margin-top: 8px;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.mention {
+  color: rgb(89, 195, 230);
+  cursor: pointer;
+}
+
+.mention:hover {
+  text-decoration: underline;
+}
+
+.mention:active {
+  opacity: 0.5;
+}

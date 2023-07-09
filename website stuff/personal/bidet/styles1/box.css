@@ -1,0 +1,76 @@
+.box-container {
+  border-radius: 0.3rem;
+  background-color: rgb(47, 32, 9);
+  width: 43.75rem;
+  height: 43.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2rem 2rem 1rem rgba(0, 0, 0, 0.2), 1rem 1rem 1rem rgba(0, 0, 0, 0.2), 3rem 3rem 1rem rgba(0, 0, 0, 0.2), 4rem 4rem 1rem rgba(0, 0, 0, 0.2), 5rem 5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.box {
+  border-radius: 0.3rem;
+  border-style: solid;
+  border-bottom-color: rgb(204, 177, 143);
+  border-bottom-width: 0.625rem;
+  border-right-color: rgb(204, 177, 143);
+  border-right-width: 0.625rem;
+  border-top-color: rgb(147, 103, 48);
+  border-top-width: 0.625rem;
+  border-left-color: rgb(147, 103, 48);
+  border-left-width: 0.625rem;
+
+  height: 41.5rem;
+  width: 41.5rem;
+  background-color: antiquewhite;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box-top-row, .box-middle-row, .box-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  height: 13.25rem;
+  width: 41.5rem;
+  background-color: rgb(81, 81, 56);
+}
+
+.chocolates-container {
+  background-color: lightblue;
+  width: 15.625rem;
+}
+
+.flower-container {
+  background-color: lightpink;
+  width: 24.25rem;
+}
+
+.confetti-container {
+  background-color: lightblue;
+  width: 10.25rem;
+}
+
+.letter-container {
+  background-color: rgb(195, 138, 47);
+  width: 16rem;
+}
+
+.poetry-container {
+  background-color: lightblue;
+  width: 14rem;
+}
+
+.pictures-container {
+  width: 20rem;
+  background-color: lightpink;
+}
+
+.game-container {
+  width: 20rem;
+  background-color: lightblue;
+}
+
+
