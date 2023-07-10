@@ -8,14 +8,20 @@
       let cartQuantity = 0; 
 
       function updateCartQuantity(amount, doing) {
-        if (doing === 'add') {
-          cartQuantity + amount > 10 ? console.log('cart will be full!')   :                    
+        if (doing === '+') {
+          if (cartQuantity + amount > 10) {
+            console.log('cart will be full!');
+          } else {
             cartQuantity += amount;
             console.log(`Cart quantity: ${cartQuantity}`);
-        } else if (doing === 'minus') {
-          cartQuantity - amount < 0 ? console.log('cart will be empty!') :
+          }
+        } else if (doing === '-') {
+          if (cartQuantity - amount < 0) {
+            console.log('cart will be empty!');
+          } else {
             cartQuantity -= amount;
             console.log(`Cart quantity: ${cartQuantity}`);
+          }
         }
         return cartQuantity;
       }
@@ -30,42 +36,35 @@
       ">Show Quantity</button>
 
       <button onclick="
-        cartQuantity = updateCartQuantity(1, 'add');
+        cartQuantity = updateCartQuantity(1, '+');
       ">Add to Cart</button>
 
       <button onclick="
-        cartQuantity += 2;
-        console.log(`Cart quantity: ${cartQuantity}`);
+        cartQuantity = updateCartQuantity(2, '+');
       ">+2</button>
 
       <button onclick="
-        cartQuantity += 3;
-        console.log(`Cart quantity: ${cartQuantity}`);
+        cartQuantity = updateCartQuantity(3, '+');
       ">+3</button>
 
       <button onclick="
-        cartQuantity += 4;
-        console.log(`Cart quantity: ${cartQuantity}`);
+        cartQuantity = updateCartQuantity(4, '+');
       ">+4</button>
 
       <button onclick="
-        cartQuantity += 5;
-        console.log(`Cart quantity: ${cartQuantity}`);
+        cartQuantity = updateCartQuantity(5, '+');
       ">+5</button>
 
       <button onclick="
-        cartQuantity--;
-        console.log(`Cart quantity: ${cartQuantity}`)
+        cartQuantity = updateCartQuantity(1, '-');
       ">Remove from cart</button>
 
       <button onclick="
-        cartQuantity -= 2;
-        console.log(`Cart quantity: ${cartQuantity}`);
+        cartQuantity = updateCartQuantity(2, '-');
       ">-2</button>
 
       <button onclick="
-        cartQuantity -= 3;
-        console.log(`Cart quantity: ${cartQuantity}`);
+        cartQuantity = updateCartQuantity(3, '-');
       ">-3</button>
 
       <button onclick="
