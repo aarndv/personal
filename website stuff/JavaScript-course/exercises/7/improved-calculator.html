@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+  <script>
+    let calc = '';
+    function displayMath(x) {
+      calc += x; 
+      console.log(calc);
+    }
+
+
+
+  </script>
+</head>
+<body>
+  <p>Calculator</p>
+  <div>
+    <button onclick="
+    displayMath('1');  
+    ">1</button>
+    <button onclick="
+    displayMath('2');
+    ">2</button>
+    <button onclick="
+    displayMath('3');
+    ">3</button>
+    <button onclick="
+    displayMath(' + ');
+    ">+</button>
+  </div>
+  <div>
+    <button onclick="
+    displayMath('4');  
+    ">4</button>
+    <button onclick="
+    displayMath('5');
+    ">5</button>
+    <button onclick="
+    displayMath('6');
+    ">6</button>
+    <button onclick="
+    displayMath(' - ');
+    ">-</button>
+  </div>
+  <div>
+    <button onclick="
+    displayMath('7');  
+    ">7</button>
+    <button onclick="
+    displayMath('8');
+    ">8</button>
+    <button onclick="
+    displayMath('9');
+    ">9</button>
+    <button onclick="
+    displayMath(' * ');
+    ">*</button>
+  </div>
+  <div>
+    <button onclick="
+    displayMath('0'); 
+    ">0</button>
+    <button onclick="
+    calc = '';
+    console.log('cleared!')
+    ">clear</button>
+    <button onclick="
+    console.log(eval(calc));
+    ">=</button>
+    <button onclick="
+    displayMath(' / ');
+    ">/</button>
+  </div>
+</body>
+</html>

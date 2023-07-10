@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(0, 0, 0);
+      background-color: rgb(12, 120, 120);
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+      border: none;
+      font-size: 50px;
+      box-shadow: inset 4px 4px 10px white, 5px 5px 15px rgba(0, 0, 0, 0.3);
+      transition: all 0.15s;
+    }
+
+    button:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+    button:active {
+      transform:rotate(360deg);
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 100px;
+      font-size: 100px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="
+      const age = 7;
+      const isHoliday = false;
+
+      if ((age <= 6 || age >= 65) && !isHoliday) {
+        console.log('It is not a holiday. You are qualified.');
+      } else if ((age <= 6 || age >= 65) && isHoliday) {
+        console.log('You are qualified but it\'s a holiday.');
+      } else if ((age > 6 || age < 65) && isHoliday) {
+        console.log('it is a holiday, and you\'re not also qualified.');
+      } else if ((age > 6 || age < 65) && !isHoliday) {
+        console.log('It is not a holiday but you\'re not qualified');
+      } 
+    ">Start</button>  
+  </div>
+</body>
+</html>
