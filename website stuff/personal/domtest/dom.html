@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom test</title>
+  <style>
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .js-subscribe-button {
+      padding: 5px 25px 5px;
+      background-color: rgb(187, 0, 0);
+      color: white;
+      font-size: 20px;
+      border-style: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.15s;
+    } 
+
+    .js-subscribe-button:hover {
+      opacity: 0.8;
+    }
+
+    .js-subscribe-button:active {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <button class="js-subscribe-button" onclick="
+    clickSubscribe();
+    ">Subscribe</button>
+  </div>
+  
+
+
+
+
+  <script>
+    function clickSubscribe() {
+      const buttonName = document.querySelector('.js-subscribe-button');
+      if (buttonName.innerHTML === 'Subscribe') {
+        buttonName.innerHTML = 'Subscribed';
+      } else {
+        buttonName.innerHTML = 'Subscribe';
+      }
+    }
+  </script>
+</body>
+</html>
