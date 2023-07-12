@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=c, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      
+      function isSameProduct(p1, p2) {
+        if (p1.name === p2.name) {
+          if (p1.price === p2.price) {
+            return true;
+          } else {
+            return false;
+          }
+        } else {
+          return false;
+        }
+      }
+        const productOne = {
+          name: 'socks',
+          price: 50
+        };
+
+        const productTwo = {
+          name: 'socks',
+          price: 50
+        };
+
+        const productThree = {
+          name: 'socks', 
+          price: 60
+        }; 
+
+        console.log(isSameProduct(productOne, productTwo));
+        console.log(isSameProduct(productTwo, productThree));
+
+        console.log("WWWWWW".toLowerCase());
+
+        console.log('teti'.repeat(200));
+
+        
+
+      
+    </script>
+  </head>
+  <body>
+  a
+  </body>
+</html>
