@@ -1,0 +1,46 @@
+.wrapper {
+  background-color: azure;
+  display: block;
+  margin: 10px 20px 10px;
+}
+
+.container {
+  padding: 10px 20px 10px;
+  background-color: rgb(231,193,110);
+  display: block;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgb(231,193,110, 0.5)
+}
+
+.question {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: montserrat;
+  color: rgb(107,7,32);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+.answer {
+  width: 100%;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: Montserrat;
+}
+
+.email {
+  font-weight: bold;
+}
+
+.exec {
+  color: rgb(107,7,32);
+  font-weight: bold;
+}
