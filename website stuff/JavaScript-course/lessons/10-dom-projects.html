@@ -4,18 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DOM Projects</title>
+  <style>
+    .subscribe-button {
+      color: white;
+      background-color: rgb(192, 0, 0);
+      font-size: 16px;
+      padding: 6px 20px 6px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+      font-weight: bold;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+      transition: all 0.15s;
+    }
 
+    .subscribe-button:hover {
+      opacity: 0.8;
+    }
+
+    .subscribe-button:active {
+      margin-top: 13px;
+      margin-left: 13px;
+      margin-bottom: 7px;
+      margin-right: 7px;
+    }
+
+    .is-subscribed {
+      background-color: rgb(205, 205, 205);
+      color: black;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .input-price {
+      padding: 10px;
+    }
+
+    .calculate-button {
+      background-color: green;
+      border: none;
+      font-size: 15px;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+  </style>
 </head>
 <body>
   <p>Youtube Subscribe Button</p>
   <button onclick="
     subscribe();
-  " class="js-subscribe-button">Subscribe</button>
+  " class="js-subscribe-button subscribe-button">Subscribe</button>
   <hr>
-  <input placeholder="price" class="js-price">
+  <input placeholder="Cost of order" class="js-price  input-price">
   <button onclick="
   priceDisplay();
-  ">Calculate</button>
+  " class="calculate-button">Calculate</button>
   <p class="js-price-display"></p>
   <hr>
   <input class="js-input-something" placeholder="input something" onkeyup="
@@ -46,8 +94,10 @@
 
       if (buttonElement.innerText === 'Subscribe') {
         buttonElement.innerText = 'Subscribed';
+        buttonElement.classList.add('is-subscribed');
       } else {
         buttonElement.innerText = 'Subscribe';
+        buttonElement.classList.remove('is-subscribed');
       }
     }
 

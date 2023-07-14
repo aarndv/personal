@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+    <style>
+    </style>
+  </head>
+  <body>
+
+    <div class="body">
+      <p>Cart Quantity</p>
+      <button onclick="
+        console.log(`Cart quantity: ${cartQuantity}`);
+      ">Show Quantity</button>
+
+      <button onclick="
+        cartQuantity = updateCartQuantity(1, '+');
+      ">Add to Cart</button>
+
+      <button onclick="
+        cartQuantity = updateCartQuantity(2, '+');
+      ">+2</button>
+
+      <button onclick="
+        cartQuantity = updateCartQuantity(3, '+');
+      ">+3</button>
+
+      <button onclick="
+        cartQuantity = updateCartQuantity(4, '+');
+      ">+4</button>
+
+      <button onclick="
+        cartQuantity = updateCartQuantity(5, '+');
+      ">+5</button>
+
+      <button onclick="
+        cartQuantity = updateCartQuantity(1, '-');
+      ">Remove from cart</button>
+
+      <button onclick="
+        cartQuantity = updateCartQuantity(2, '-');
+      ">-2</button>
+
+      <button onclick="
+        cartQuantity = updateCartQuantity(3, '-');
+      ">-3</button>
+
+      <button onclick="
+        cartQuantity = 0 
+        console.log('Cart was reset');
+        console.log(cartQuantity);
+      ">Reset Cart</button>
+
+      <p class="js-cart-quantity"></p>
+      <p class="js-warning"></p>
+    </div>
+
+    <script> 
+      let cartQuantity = 0; 
+
+      function updateCartQuantity(amount, doing) {
+        if (doing === '+') {
+          if (cartQuantity + amount > 10) {
+            console.log('cart will be full!');
+            cartWarning('full');
+          } else {
+            cartQuantity += amount;
+            console.log(`Cart quantity: ${cartQuantity}`);
+          }
+        } else if (doing === '-') {
+          if (cartQuantity - amount < 0) {
+            console.log('cart will be empty!');
+            cartWarning('empty');
+          } else {
+            cartQuantity -= amount;
+            console.log(`Cart quantity: ${cartQuantity}`);
+          }
+        }
+        displayCartQuantity();
+        return cartQuantity;
+      }
+
+      function displayCartQuantity() {
+        document.querySelector('.js-cart-quantity').innerHTML = `In your cart: ${cartQuantity}`;
+      }
+      function cartWarning(state) {
+          document.querySelector('.js-warning')
+            .innerHTML = `Warning, cart will be ${state}!`
+        }
+
+
+    </script>
+  </body>
+</html>

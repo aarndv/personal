@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Projects</title>
+  <style>
+    .subscribe-button {
+      color: white;
+      background-color: rgb(192, 0, 0);
+      font-size: 16px;
+      padding: 6px 20px 6px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+      font-weight: bold;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+      transition: all 0.15s;
+    }
+
+    .subscribe-button:hover {
+      opacity: 0.8;
+    }
+
+    .subscribe-button:active {
+      margin-top: 13px;
+      margin-left: 13px;
+      margin-bottom: 7px;
+      margin-right: 7px;
+    }
+
+    .is-subscribed {
+      background-color: rgb(205, 205, 205);
+      color: black;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .input-price {
+      padding: 10px;
+    }
+
+    .calculate-button {
+      background-color: green;
+      border: none;
+      font-size: 15px;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    
+    .red {
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <p>Youtube Subscribe Button</p>
+  <button onclick="
+    subscribe();
+  " class="js-subscribe-button subscribe-button">Subscribe</button>
+  <hr>
+  <input placeholder="Cost of order" class="js-price  input-price" onkeydown="
+  priceKeyDown(event);
+  ">
+  <button onclick="
+  priceDisplay();
+  " class="calculate-button">Calculate</button>
+  <p class="js-price-display"></p>
+  <hr>
+  <input class="js-input-something" placeholder="input something" onkeyup="
+  onKeyUp(event);
+  ">
+  <p class="js-display-something"></p>
+  <script>
+    function onKeyUp(event) {
+      document.querySelector('.js-display-something').innerHTML = event.key;
+    }
+
+    function priceDisplay() {
+      const priceValue = (Number(document.querySelector('.js-price').value));
+      const displayElement = document.querySelector('.js-price-display');
+      
+      if (priceValue < 0) {
+        displayElement.classList.add('red');
+        displayElement.innerHTML = `Error: Price cannot be negative.`;
+        return;
+      } else {
+        displayElement.classList.remove('red');
+      }
+
+      let productPrice = priceValue*100;
+
+      if (productPrice < 4000) {
+        productPrice += 1000;
+      }
+
+      Math.round(productPrice); 
+      productPrice = productPrice/100;
+
+      displayElement.innerHTML = `Price: $${productPrice}`;
+    }
+
+    function subscribe() {
+      const buttonElement = document.querySelector('.js-subscribe-button');
+
+      if (buttonElement.innerText === 'Subscribe') {
+        buttonElement.innerText = 'Subscribed';
+        buttonElement.classList.add('is-subscribed');
+      } else {
+        buttonElement.innerText = 'Subscribe';
+        buttonElement.classList.remove('is-subscribed');
+      }
+    }
+
+    function priceKeyDown(event) {
+      if (event.key === 'Enter') {
+        priceDisplay();
+      }
+    }
+
+
+  </script>
+</body>
+</html>

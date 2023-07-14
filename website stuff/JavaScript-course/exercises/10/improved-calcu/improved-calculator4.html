@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p class="js-answer answer"></p>
+  <p class="js-math-display math-display"></p>
+  <div>
+    <button class="button number" onclick="
+    displayMath(1);  
+    ">1</button>
+    <button class="button number"  onclick="
+    displayMath(2);
+    ">2</button>
+    <button class="button number" onclick="
+    displayMath(3);
+    ">3</button>
+    <button  class="button operation" onclick="
+    displayMath(' + ');
+    ">+</button>
+  </div>
+  <div>
+    <button class="button number" onclick="
+    displayMath(4);  
+    ">4</button>
+    <button class="button number" onclick="
+    displayMath(5);
+    ">5</button>
+    <button class="button number"  onclick="
+    displayMath(6);
+    ">6</button>
+    <button class="button operation" onclick="
+    displayMath(' - ');
+    ">-</button>
+  </div>
+  <div>
+    <button class="button number" onclick="
+    displayMath(7);  
+    ">7</button>
+    <button class="button number" onclick="
+    displayMath(8);
+    ">8</button>
+    <button class="button number" onclick="
+    displayMath(9);
+    ">9</button>
+    <button class="button operation" onclick="
+    displayMath(' * ');
+    ">*</button>
+  </div>
+  <div>
+    <button class="button number" onclick="
+    displayMath('0'); 
+    ">0</button>
+    <button class="button number" onclick="
+    displayMath('.');
+    ">.</button>
+    <button class="button number" onclick="
+    console.log(eval(calc));
+    displayMathAnswer(eval(calc));
+    ">=</button>
+    <button class="button operation" onclick="
+    displayMath(' / ');
+    ">/</button>
+  </div>
+  <div>
+    <button class="button number" onclick="
+    calc = '';
+    console.log('cleared!')
+    displayMathElement();
+    displayMathAnswer('');
+    ">clear</button>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+</html>

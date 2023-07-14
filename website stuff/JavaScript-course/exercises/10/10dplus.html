@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .button {
+      padding: 10px 20px;
+      border: none;
+      color: black;
+      background-color: gainsboro;
+      border-radius: 4px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: all 0.15s;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      margin-right: 8px;
+    }
+
+    .button:hover {
+      opacity: 0.8;
+    }
+
+    .is-toggled {
+      background-color: rgb(130, 130, 130);
+      color: white;
+      box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.35);
+    }
+
+  </style>
+</head>
+<body>
+
+  <button class="js-button button" onclick="
+  buttonClick('.js-button', '.js-button2', '.js-button3');  
+  ">Gaming</button>
+  <button class="js-button2 button" onclick="
+  buttonClick('.js-button2', '.js-button3', '.js-button');  
+  ">Music</button>
+  <button class="js-button3 button" onclick="
+  buttonClick('.js-button3', '.js-button', '.js-button2');  
+  ">Tech</button>
+
+  <script>
+    function buttonClick(which, x, y) {
+      const buttonElement = document.querySelector(which); 
+      const buttonElement2 = document.querySelector(x);
+      const buttonElement3 = document.querySelector(y);
+      if (!(buttonElement.classList.contains('is-toggled'))) {
+        buttonElement.classList.add('is-toggled');
+        buttonElement2.classList.remove('is-toggled');
+        buttonElement3.classList.remove('is-toggled');
+      } else {
+        buttonElement.classList.remove('is-toggled');
+      }
+    };
+    
+  </script>
+</body>
+</html>
