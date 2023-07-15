@@ -21,3 +21,4 @@ function displayMathAnswer(answer) {
   document.querySelector('.js-answer')
     .innerHTML = answer
 }
+

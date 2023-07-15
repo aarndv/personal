@@ -167,6 +167,27 @@
 
     minMax([3])
 
+    function countWords(words) {
+      const result = {}; 
+
+      for (i = 0; i < words.length; i++) {
+        const x = words[i]; 
+        if (!result[x]) {
+          result[x] = 1; 
+        } else if (result[x]) {
+          result[x]++; 
+        }
+      };
+      console.log(result);
+    };
+
+    countWords([
+      'Mary',
+      'Marianne',
+      'Mary',
+      'Mary'
+    ]);    
+
   </script>
 </body>
 </html>
