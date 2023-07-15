@@ -28,3 +28,9 @@ function addTodo() {
 
   renderTodoList();
 };
+
+function keyDown(event) {
+  if (event.key === "Enter") {
+    addTodo();
+  }
+};

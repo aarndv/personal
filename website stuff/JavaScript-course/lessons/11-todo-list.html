@@ -9,7 +9,9 @@
 </head>
 <body>
   <p>Todo List</p>
-  <input placeholder="Todo name" class="js-name-input">
+  <input placeholder="Todo name" class="js-name-input" onkeydown="
+  keyDown(event);
+  ">
   <button onclick="
     addTodo();
   ">Add</button>
