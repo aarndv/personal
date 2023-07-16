@@ -6,29 +6,28 @@
 }
 
 .greetings-container {
-  margin-bottom: 35.25rem;
+  margin-bottom: 5.25rem;
   margin-left: 60px;
   margin-right: 60px;
   cursor: pointer;
-  background-color: rgb(148,148,148);
+  background-color: rgb(208,258,200);
   color: rgb(0, 0, 0);
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
   border-width: 0.0625rem;
-  border-radius: 1.625rem;
+  border-radius: 0.4rem;
   border-style: solid;
   border-color: rgb(235,232,229);
-  box-shadow: inset 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.5);
   transition: all 0.15s;
 }
 
-.greetings-container:hover {
-  background-color: white;
-}
-
 .greetings {
-  font-family: Roboto;
+  font-family: Arial;
   font-weight: 500;
-  font-size: 6.25rem;
+  font-size: 1rem;
   text-align: center;
+  height: 500px;
+  margin: 20px 20px;
+  line-height: 45px;
 }

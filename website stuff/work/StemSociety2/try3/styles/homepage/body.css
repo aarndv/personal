@@ -1,11 +1,11 @@
 section {
   font-size: 1rem;
   background-color: antiquewhite;
-  padding: 1rem 1rem 0;
+  padding: 1rem 0.5rem 0;
 }
 
 .wrapper {
-  height: 1445px;
+  height: 2145px;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
@@ -40,6 +40,69 @@ h3 {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   line-height: 28px;
+}
+
+.paragraph-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.paragraph-container1, .paragraph-container2, .paragraph-container3, .paragraph-container4 {
+  background-position: center;
+  background-size: 400px;
+  background-color: lightcoral;
+  width: 47%;
+  height: 260px;
+  padding: 15px 0px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.paragraph-container1 {
+  background-image: url(../../imgs/bg1.jpg);
+  background-size: 400px;
+  background-position-x: 25%;
+  width: 47%;
+  height: 260px;
+}
+
+.paragraph-container2 {
+  background-image: url(../../imgs/bg2.jpg);
+  background-size: 285px;
+}
+
+.paragraph-container3 {
+  background-image: url(../../imgs/bg3.jpg);
+}
+
+.paragraph-container4 {
+  background-image: url(../../imgs/bg4.jpg);
+}
+
+.black-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6)
+}
+
+.paragraph-container1 p, .paragraph-container2 p, .paragraph-container3 p, .paragraph-container4 p {
+  margin: 20px 10px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
 }
 
 .footer {
