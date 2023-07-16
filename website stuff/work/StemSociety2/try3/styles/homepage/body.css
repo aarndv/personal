@@ -35,8 +35,12 @@ h3 {
   margin: 10px -20px 10px;
 }
 
+.goals {
+  margin-bottom: 50px;
+}
+
 .paragraph {
-  margin-bottom: 60px;
+  margin: 0px 20px 60px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   line-height: 28px;
@@ -63,6 +67,8 @@ h3 {
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .paragraph-container1 {
@@ -73,18 +79,35 @@ h3 {
   height: 260px;
 }
 
+.paragraph-container1:hover {
+  transform: scale(1.08);
+}
+
 .paragraph-container2 {
   background-image: url(../../imgs/bg2.jpg);
   background-size: 285px;
+}
+
+.paragraph-container2:hover {
+  transform: scale(1.08);
 }
 
 .paragraph-container3 {
   background-image: url(../../imgs/bg3.jpg);
 }
 
+.paragraph-container3:hover {
+  transform: scale(1.08);
+}
+
 .paragraph-container4 {
   background-image: url(../../imgs/bg4.jpg);
 }
+
+.paragraph-container4:hover {
+  transform: scale(1.08);
+}
+
 
 .black-container {
   display: flex;
