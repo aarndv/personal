@@ -23,11 +23,11 @@
 }
 
 .greetings {
-  font-family: Arial;
+  font-family: Indie Flower;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 2.5rem;
   text-align: center;
-  height: 500px;
   margin: 20px 20px;
-  line-height: 45px;
+  line-height: 80px;
+
 }
