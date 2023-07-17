@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles1/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Caveat&family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Satisfy&display=swap" rel="stylesheet">
+  <title>Login</title>
+  <style>
+    .red {
+      color: red;
+      font-size: 14px;
+      font-family: Montserrat;
+      text-align: center;
+    }
+
+    .margin {
+      margin-top: 34.833px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="login-relative">
+      <div class="login-container">
+        <div class="title-container">
+          <h1>Welcome !<br>Enter your details to enter</h1>
+        </div>
+        <div class="username-container">
+          <input placeholder="Enter your username" class="text-box js-username-input">
+        </div>
+        <div class="password-container">
+          <input placeholder="Enter your password" class="text-box js-password-input" type="password">
+        </div>
+        <p class="js-warning"></p>
+        <button class="enter-button" onclick="
+          clickRedirect();
+        ">Enter</button>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/login/login.js"></script>
+</body> 
+</html>

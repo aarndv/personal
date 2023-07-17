@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(lightblue, salmon);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-relative {
+  height: 500px;
+  width: 320px;
+  background-image: linear-gradient(lightpink, salmon);
+  border-radius: 20px;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 310px;
+  height: 490px;
+  background-color: azure;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.title-container h1{
+  text-align: center;
+  font-family: Satisfy;
+  font-size: 35px;
+  line-height: 50px;
+  color: black;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: default;
+}
+
+.text-box {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 50px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: lightgoldenrodyellow;
+  background-color: rgb(230, 230, 230);
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.text-box:focus {
+  outline-style: solid;
+  outline-color: salmon;
+}
+
+.text-box::placeholder {
+  color: gray;
+  font-family: Roboto;
+}
+
+.enter-button {
+  padding: 10px 30px;
+  font-size: 20px;
+  font-family: Montserrat;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.12s;
+}
+
+.enter-button:hover {
+  background-color: salmon;
+  color: white;
+}
+
+.enter-button:active {
+  opacity: 0.8;
+}
