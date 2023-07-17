@@ -54,6 +54,9 @@
 }
 
 .letter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 16rem;
 }
 
@@ -84,6 +87,23 @@
 .game-container {
   width: 20rem;
   background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container a{
+  cursor: pointer;
+}
+
+.game-img {
+  width: 12rem;
+  transition: all 200ms;
+}
+
+.game-img:hover {
+  opacity: 0.8;
+  width: 13rem;
 }
 
 

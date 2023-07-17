@@ -3,6 +3,16 @@ body {
   background-color: rgb(222, 216, 207);
 }
 
+.button-back {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 30px 90px;
+  font-size: 35px;
+  border-style: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 .body {
   display: flex;
   justify-content: space-between;
