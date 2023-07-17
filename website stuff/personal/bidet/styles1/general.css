@@ -2,3 +2,7 @@ body {
   margin: 0px;
   padding-top: 8.875rem;
 }
+
+.greetings {
+  background: var(--dark-gradient);
+}

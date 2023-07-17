@@ -1,0 +1,138 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(235, 232, 229);
+  background-color: rgb(107, 7, 32);
+}
+
+header {
+  background-color: rgb(231, 193, 110);
+  color: rgb(107, 7, 32);
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  color: rgb(107, 7, 32);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+main {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section {
+  flex-basis: calc(50% - 50px);
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: rgb(231, 193, 110);
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.event-card {
+  background-color: rgb(231, 193, 110);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: rgb(231, 193, 110);
+  text-align: center;
+  padding: 20px 0;
+  color: rgb(107, 7, 32);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  color: rgb(107, 7, 32);
+  background-color: rgb(235, 232, 229);
+}
+
+header.dark-mode {
+  background-color: rgb(107, 7, 32);
+  color: rgb(235, 232, 229);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+nav a.dark-mode {
+  color: rgb(235, 232, 229);
+}
+
+h2.dark-mode {
+  color: rgb(231, 193, 110);
+}
+
+.event-card.dark-mode {
+  background-color: rgb(107, 7, 32);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+footer.dark-mode {
+  background-color: rgb(107, 7, 32);
+  color: rgb(235, 232, 229);
+  box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  main {
+      padding: 20px;
+  }
+
+  section {
+      flex-basis: 100%;
+  }
+}

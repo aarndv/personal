@@ -1,0 +1,39 @@
+body {
+  font-size: 16px;
+}
+
+header {
+  padding: 30px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+main {
+  padding: 50px 100px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+}
+
