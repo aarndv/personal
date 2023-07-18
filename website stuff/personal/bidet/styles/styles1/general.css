@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  padding-top: 8.875rem;
+  background-image: radial-gradient(rgb(0, 255, 0), rgb(230, 230, 93));
 }
 
 .greetings {

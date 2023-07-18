@@ -6,11 +6,18 @@ body {
 .button-back {
   cursor: pointer;
   margin-top: 20px;
-  padding: 30px 90px;
-  font-size: 35px;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-family: Indie Flower;
+  font-weight: bold;
   border-style: none;
   border-radius: 20px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.button-back p {
+  margin-top: -45px;
 }
 
 .body {
