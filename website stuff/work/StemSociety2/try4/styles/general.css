@@ -1,21 +1,9 @@
 body {
   margin: 0;
   padding-top: 114px;
-  background-color: rgb(112, 54, 54);
-  display: flex;
-  align-items: center;
+  height: 2000px;
+  background-image: linear-gradient(rgb(107,7,32) 60%, rgb(231,193,110));
+  overflow-x: hidden;
 }
 
-.wrapper {
- width: 100%;
- padding: 10px 10px 10px;
- height: 1000px;
-}
-
-.center-wrapper {
-  background-color:  rgb(112, 54, 54);
-  height: 100%;
-  box-shadow: 0px 0px 50px rgb(255, 255, 255, 0.2);
-  border-radius: 10px;
-}
 
