@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>  
+    function findIndex(array, word) {
+      for (i = 0; i < array.length; i++) {
+        if (array[i] === word) {
+          return i;
+        }
+      }
+      return -1;
+    }
+
+    function unique(array) {
+      const uniqueArray = [];
+      for (i = 0; i < array.length; i++) {
+        const word = array[i];
+        if (findIndex(uniqueArray, word) === -1) {
+          uniqueArray.push(word);
+        } 
+      }
+      return uniqueArray; 
+    }
+
+    console.log(nique(['breakfast', 'exercise', 'sex', 'bathroom-sex', 'sex', 'eat', 'play', 'sex', 'play', 'exercise', 'draw', 'sex', 'bed-sex']));
+  </script>
+</body>
+</html>
