@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <button class="js-button" onclick="
+    change();   
+  ">Start</button>
+
+  <script>
+
+/*
+    const add = function() {
+      console.log(2 + 3); 
+    }
+
+
+    function runTwice(fun) {
+      fun();
+      fun();
+    }
+
+    runTwice(function () {
+      console.log('12b');
+    })
+
+      // function() {console.log('12b');} 
+      // function() {console.log('12b');} 
+
+    runTwice(add);
+*/
+    function change() {
+      const buttonElement = document.querySelector('.js-button'); 
+      if (buttonElement.classList.contains('activated')) {
+        buttonElement.classList.remove('activated');
+        buttonElement.innerHTML = 'Start' 
+      } else if (!(buttonElement.classList.contains('activated'))){
+        setTimeout(function() {
+          buttonElement.classList.add('activated')
+          buttonElement.innerHTML = 'Finished!'
+        }, 2000); 
+        
+      }
+
+    }
+
+
+  </script>
+</body>
+</html>

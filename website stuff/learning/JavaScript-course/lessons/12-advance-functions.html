@@ -48,6 +48,7 @@
     });
     */
 
+    /*
     setTimeout(function() {
       console.log('timeout'); 
       console.log('timeout2')
@@ -60,6 +61,19 @@
     }, 1000);
 
     console.log('next line2');
+    */
+
+    [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+    ].forEach(function(value, index) {
+      if (value === 'wash dishes') {
+        return;
+      }
+      console.log(index);
+      console.log(value);
+    });
 
   </script>
 </body>
