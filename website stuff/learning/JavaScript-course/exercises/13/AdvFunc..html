@@ -3,14 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title class="js-title">12g</title>
 </head>
 <body>
 
   <button class="js-button" onclick="
     change();   
-  ">Start</button>
+  " style="margin-bottom: 20px;">Start</button>
 
+  <div>
+    <button class="js-amazon-button" onclick="
+      displayMessage();
+    ">Add to cart</button>
+  </div>
+  <p class="js-message"></p>
+  <button onclick="
+    addMessage();
+  ">Add</button>
+  <button onclick="
+    removeMessage();
+  ">Remove</button>
   <script>
 
 /*
@@ -33,21 +45,68 @@
 
     runTwice(add);
 */
+
     function change() {
       const buttonElement = document.querySelector('.js-button'); 
-      if (buttonElement.classList.contains('activated')) {
-        buttonElement.classList.remove('activated');
+      const classList = buttonElement.classList; 
+      if (classList.contains('activated')) {
+        classList.remove('activated');
         buttonElement.innerHTML = 'Start' 
-      } else if (!(buttonElement.classList.contains('activated'))){
+      } else {
+        buttonElement.innerHTML = 'Loading...'
         setTimeout(function() {
-          buttonElement.classList.add('activated')
+          classList.add('activated')
           buttonElement.innerHTML = 'Finished!'
         }, 2000); 
-        
+      }
+    }
+
+    let timer; 
+
+    function displayMessage() {
+        const buttonElement = document.querySelector('.js-message'); 
+        buttonElement.innerHTML = 'Added to cart!'; 
+        clearTimeout(timer);
+        timer = setTimeout(function() {
+          buttonElement.innerHTML = '';
+        }, 2000);
+    }
+
+    let message = 2;
+    let logic; 
+
+    setInterval(function() {
+      changeMessage(); 
+    }, 1000)
+
+    function changeMessage() {
+      const titleElement = document.querySelector('.js-title'); 
+
+      if (message < 1) {
+        logic = false; 
+      }
+
+      if (logic) {
+        logic = false;
+        titleElement.innerHTML = `(${message}) New messsages`;
+      } else {
+        logic = true; 
+        titleElement.innerHTML = `App`;
+      }
+    }
+
+    function addMessage() {
+      message++;
+    }
+
+    function removeMessage () {
+      if (message < 1) {
+        return; 
+      } else {
+        message--;
       }
 
     }
-
 
   </script>
 </body>
