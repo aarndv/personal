@@ -1,7 +1,13 @@
 .feu-img {
-  object-fit: cover;
   width: 100vw;
-  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.4)));
+  height: 300px;
+  background-image: linear-gradient(rgb(0, 0, 0, 0) 90%, rgb(231,193,110, 0.1));
+}
+
+.box2 {
+  width: 100vw;
+  height: 2px;
+  background-color: rgba(231, 193, 119, 1);
 }
 
 .footer {
@@ -14,3 +20,5 @@
   left: 0px;
   right: 0px;
 }
+
+
