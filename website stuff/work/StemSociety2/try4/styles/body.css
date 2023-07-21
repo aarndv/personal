@@ -41,7 +41,7 @@
   color: rgb(231,193,110);
   font-family: Dancing Script;
   height: 100px;
-  text-shadow: 2px 2px 0px rgba(231,193,11, 0.3);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 .title-container h2 {
