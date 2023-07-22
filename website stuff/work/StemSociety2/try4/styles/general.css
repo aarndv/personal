@@ -14,4 +14,9 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+@media only screen and (min-width: 820px) {
+  body{
+    padding-top: 72px;
+  }
+}
 
