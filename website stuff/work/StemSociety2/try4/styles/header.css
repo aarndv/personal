@@ -99,7 +99,7 @@
   cursor: pointer;
   text-decoration: none;
   flex: 5;
-  text-align: justify;
+  text-align: left;
   align-items: center;
   justify-content: center;
 }
@@ -119,12 +119,13 @@
 }
 
 .dropdown-menu {
+
   position: absolute;
   right: -1rem; 
   top: calc(100% + .55rem);
   background-color: rgb(231,193,110);
   padding: .75rem 1rem;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 
   opacity: 0;
   pointer-events: none;
