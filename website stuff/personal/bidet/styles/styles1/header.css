@@ -11,16 +11,18 @@ box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.4);
   justify-content: center;
 
   z-index: 100;
+  cursor: default;
 }
 
 .header h1 {
   font-family: Satisfy;
   font-size: 50px;
   color: white;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
 }
 
 .header span{
-  color: rgb(186, 104, 104);
-  font-size: 25px;
+  color: rgb(255, 197, 197);
+  font-size: 35px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
 }

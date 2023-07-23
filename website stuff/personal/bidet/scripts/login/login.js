@@ -1,5 +1,11 @@
 // window.location.replace('...')
 
+function passwordKeydown(event) {
+  if (event.key === 'Enter') {
+    clickRedirect();
+  }
+}
+
 function redirect() {
   window.location.href = "homepage.html";
 };

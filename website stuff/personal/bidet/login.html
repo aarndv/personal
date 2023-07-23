@@ -32,7 +32,9 @@
           <input placeholder="Enter your username" class="text-box js-username-input">
         </div>
         <div class="password-container">
-          <input placeholder="Enter your password" class="text-box js-password-input" type="password">
+          <input placeholder="Enter your password" class="text-box js-password-input" type="password" onkeydown="
+            passwordKeydown(event); 
+          ">
         </div>
         <p class="js-warning"></p>
         <button class="enter-button" onclick="
