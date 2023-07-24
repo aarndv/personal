@@ -1,10 +1,3 @@
-body {
-  margin: 0;
-  padding-top: 114px;
-  height: 3500px;
-  background-image: linear-gradient(rgb(107,7,32) 60%, rgb(231,193,110));
-  overflow-x: hidden;
-}
 
 html {
   scroll-behavior: smooth;
@@ -20,3 +13,22 @@ html {
   }
 }
 
+/*
+  fix
+*/
+
+html, 
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding-top: 114px;
+  height: 3500px;
+  background-image: linear-gradient(rgb(107,7,32) 80%, rgb(231,193,110));
+  overflow-x: hidden;
+}
